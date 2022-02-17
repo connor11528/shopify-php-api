@@ -47,6 +47,6 @@
     "scripts": {
         "test": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --color --testsuite default",
         "test_rest_resources": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --color --testsuite rest_resources",
-        "lint": "./vendor/bin/phpcs --standard=PSR12 src tests"
+        "lint": "./vendor/bin/phpcs --standard=PSR12 --ignore=src/Rest/*,tests/Rest/* src tests"
     }
 }
